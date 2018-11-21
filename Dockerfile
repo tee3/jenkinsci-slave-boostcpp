@@ -16,7 +16,3 @@ RUN dnf -y update && dnf -y install \
     pkg-config
 
 USER jenkins
-
-# @todo the contrib/boost.jam file is missing from the installation on
-# the underlying Docker (Debian Stretch), so add it
-COPY boost.jam "${HOME}"
